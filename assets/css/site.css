@@ -227,7 +227,6 @@ h2.title { font-size: clamp(2rem, 4.2vw, 3rem); letter-spacing: -0.02em; }
 .chip em { font-style: normal; color: var(--muted); font-weight: 500; }
 .chip--tl { left: -4%; top: 58%; }
 .chip--br { right: -2%; bottom: 1%; }
-.chip--olive .dot { background: var(--olive); }
 
 /* ---------- Steps band ---------- */
 .steps { background: var(--chile); color: #fff; overflow: hidden; isolation: isolate; }
