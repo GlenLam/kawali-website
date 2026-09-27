@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Kawali Privacy Policy</title>
-  <meta name="description" content="Kawali has no ads, analytics or tracking. Your recipes and grocery list stay on your iPhone. This policy explains exactly what is sent to read a recipe from a link, a photo or pasted text, and what happens to it.">
+  <meta name="description" content="Kawali has no ads, analytics or tracking. Your recipes and grocery list stay on your iPhone. This policy explains exactly what is sent to read a recipe from a link, a photo or pasted text, how the Kawali Feast subscription is handled, and what happens to it all.">
   <link rel="canonical" href="https://kawali.app/privacy">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="article">
@@ -45,7 +45,7 @@
         <h1>Kawali Privacy Policy</h1>
         <div class="doc-meta">
           <span><strong>Effective date:</strong> September 27, 2026</span>
-          <span><strong>Applies to:</strong> the Kawali app for iPhone and iPad, including its share extension, and the Kawali service it uses to read recipes</span>
+          <span><strong>Applies to:</strong> the Kawali app for iPhone and iPad, including its share extension and the Kawali Feast subscription, and the Kawali service it uses to read recipes</span>
         </div>
         <ul class="doc-toc" aria-label="Sections">
           <li><a href="#device">1. On your device</a></li>
@@ -53,15 +53,16 @@
           <li><a href="#watching">3. Watching a video</a></li>
           <li><a href="#photos-text">4. Photos and pasted text</a></li>
           <li><a href="#notifications">5. Notifications</a></li>
-          <li><a href="#pictures">6. Pictures and links out</a></li>
-          <li><a href="#providers">7. Service providers</a></li>
-          <li><a href="#logs">8. Server logs</a></li>
-          <li><a href="#permissions">9. Permissions</a></li>
-          <li><a href="#not-collected">10. Not collected</a></li>
-          <li><a href="#children">11. Children</a></li>
-          <li><a href="#rights">12. Your rights</a></li>
-          <li><a href="#security">13. Security</a></li>
-          <li><a href="#changes">14. Changes</a></li>
+          <li><a href="#feast">6. Kawali Feast</a></li>
+          <li><a href="#pictures">7. Pictures and links out</a></li>
+          <li><a href="#providers">8. Service providers</a></li>
+          <li><a href="#logs">9. Server logs</a></li>
+          <li><a href="#permissions">10. Permissions</a></li>
+          <li><a href="#not-collected">11. Not collected</a></li>
+          <li><a href="#children">12. Children</a></li>
+          <li><a href="#rights">13. Your rights</a></li>
+          <li><a href="#security">14. Security</a></li>
+          <li><a href="#changes">15. Changes</a></li>
         </ul>
       </header>
 
@@ -70,6 +71,7 @@
         <div class="summary">
           <p>Kawali has no ads, no analytics and no tracking. Your saved recipes, your notes and your grocery list stay on your iPhone.</p>
           <p>To turn a video into a recipe, the app sends the video's link to Kawali's server, which reads the public post and may use an AI service to help understand it. When you import a photo, the words are read on your iPhone and only the text is sent; the photo itself never leaves your device. Nothing that identifies you or your device is sent with an import, and we don't sell or share data for advertising.</p>
+          <p>Kawali Feast, the optional subscription, is bought through the App Store. Apple handles the payment, and RevenueCat, the service we use to keep track of subscriptions, holds the record of it under an anonymous identifier for your device, never under your name.</p>
         </div>
 
         <h2 id="device">1. What stays on your device</h2>
@@ -78,8 +80,9 @@
           <li><strong>Recipes:</strong> each recipe you save, with your edits, notes, favorites, pins and the part of the photo you chose to show, plus a copy of the recipe's picture (platforms' picture links expire, so the app keeps its own).</li>
           <li><strong>Groceries:</strong> your grocery list and what you have checked off.</li>
           <li><strong>Preferences:</strong> a few settings, such as how your recipes are sorted and whether English names are shown on the grocery list.</li>
+          <li><strong>Reveals used:</strong> how many recipes Kawali has read for you this calendar month (see <a href="#feast">section 6</a>). This one number is kept in your device's keychain rather than with the app's other data, so the free reveals don't start over when Kawali is deleted and reinstalled. It is a month and a count, it never leaves your device, and it isn't synced through iCloud.</li>
         </ul>
-        <p>This storage is shared only with Kawali's share extension on the same device, which uses it to hand a link or photos you share over to the app. None of it is uploaded to us. Deleting the app deletes all of it.</p>
+        <p>This storage is shared only with Kawali's share extension on the same device, which uses it to hand a link or photos you share over to the app. None of it is uploaded to us. Deleting the app deletes all of it, apart from the reveal count in the keychain.</p>
         <p><strong>Backups:</strong> if you use iCloud Backup or back up your device to a computer, Kawali's data may be included like any other app's. Backups are controlled by you and covered by Apple's privacy policy.</p>
 
         <h2 id="links">2. Importing from a link</h2>
@@ -102,10 +105,23 @@
         <h2 id="notifications">5. Notifications</h2>
         <p>Notifications are optional. The first time you save a recipe Kawali is still watching, iOS asks whether Kawali may send you notifications. If you allow them, the app sends the server your device's push token, the recipe's title and an identifier the app created for that recipe, so it can tell you when the steps are ready. The server keeps these only until that video is finished (at most three days) and then deletes them. Notifications are delivered by Apple's Push Notification service. You can turn them off at any time in Settings › Notifications › Kawali.</p>
 
-        <h2 id="pictures">6. Pictures, videos and links you open</h2>
+        <h2 id="feast">6. Kawali Feast, the subscription</h2>
+        <p>Kawali is free to use. Kawali Feast is an optional subscription that raises the number of recipes Kawali reads for you each month (we call each one a reveal) from 5 to 100. Recipes you write yourself are always free, and how many reveals you have used is counted on your device (<a href="#device">section 1</a>), never sent anywhere.</p>
+        <p>Feast is bought through the App Store, so <strong>Apple handles the payment</strong> under your Apple Account. Kawali never sees your name, your Apple Account or your payment details, and neither does anyone we work with.</p>
+        <p>To know whether Feast is active on your device, Kawali uses <strong>RevenueCat</strong>, a service that keeps track of app subscriptions. Each time the app opens, whether or not you ever subscribe, it asks RevenueCat about this device, and after a purchase it passes RevenueCat the App Store's record of it. What RevenueCat receives:</p>
+        <ul>
+          <li><strong>Two identifiers for the device, neither of them about you:</strong> a random anonymous identifier the app makes for itself (deleting the app discards it, and a reinstall makes a new one), and Apple's vendor identifier, an identifier Apple gives our apps on your device and resets when they are all removed. It is not the advertising identifier, which Kawali never uses.</li>
+          <li><strong>Your Kawali purchases, as the App Store records them:</strong> the plan, when it was bought, renews and ends, the price and currency, and Apple's transaction numbers. Never your name or payment details.</li>
+          <li><strong>About the device:</strong> which country's App Store you use, your device's language, its model and iOS version, the Kawali version and, as with any server it talks to, its network address.</li>
+          <li><strong>How the Feast page is used:</strong> that it was shown, closed, or led to a purchase, and, if you use its subscription management page, the option you chose there (for instance, a reason you gave when cancelling).</li>
+        </ul>
+        <p>RevenueCat uses this only to tell Kawali whether Feast is active and to show us, in its dashboard, how many anonymous devices subscribe and whether the Feast page works. It does not link the record to a person, and neither do we; it does not use advertising identifiers; and we have turned on none of its connections to other services. RevenueCat acts on our behalf under its data processing agreement and keeps the record on servers in the United States for as long as Kawali uses its service. You can ask us to have a device's record deleted (<a href="#rights">section 13</a>).</p>
+        <p>Apple, for its part, tells RevenueCat when your subscription renews, changes, is cancelled or is refunded. Changing plans, cancelling and asking for a refund all happen on Apple's own screens, which the Feast page opens for you, and are covered by Apple's privacy policy.</p>
+
+        <h2 id="pictures">7. Pictures, videos and links you open</h2>
         <p>To show a recipe's picture, the app downloads it from where the platform hosts it (for example, YouTube's image servers). Like visiting any web page, that platform receives your device's network address when the picture loads. When you tap to view the original video, open a linked recipe page or share a recipe, the destination you choose receives it, and its own privacy practices apply.</p>
 
-        <h2 id="providers">7. Service providers</h2>
+        <h2 id="providers">8. Service providers</h2>
         <p>Kawali relies on a small number of providers to work. They process data only to provide their service to us:</p>
         <div class="table-wrap">
           <table>
@@ -113,17 +129,18 @@
             <tbody>
               <tr><td>Our hosting provider</td><td>Hosts Kawali's server and database</td><td>Links and text sent for import, the records in sections 2, 3 and 5, and the logs in section 9</td></tr>
               <tr><td>An AI service</td><td>Helps turn public posts, public videos and the text you import into ingredients and steps</td><td>Public text from posts, text you import from a photo or clipboard, and content from public videos. It keeps what it is sent for up to 30 days, to monitor for abuse and to let us retrieve an answer, and then deletes it; its terms don't allow it to use this data to train its models</td></tr>
-              <tr><td>Apple</td><td>Delivers notifications; App Store</td><td>Your push token and the notification, if you allow notifications</td></tr>
-              <tr><td>YouTube, TikTok, Instagram, Facebook, Pinterest and linked recipe sites</td><td>The sources Kawali reads</td><td>Requests from our server for the public post you imported, and picture requests from your device (section 6)</td></tr>
+              <tr><td>RevenueCat</td><td>Keeps track of Kawali Feast subscriptions and shows the Feast page</td><td>The anonymous device identifiers, the App Store's record of your Kawali purchases, the device details and the Feast page use listed in section 6</td></tr>
+              <tr><td>Apple</td><td>The App Store and payment for Kawali Feast; delivers notifications</td><td>Your purchase, under your Apple Account and Apple's privacy policy; your push token and the notification, if you allow notifications</td></tr>
+              <tr><td>YouTube, TikTok, Instagram, Facebook, Pinterest and linked recipe sites</td><td>The sources Kawali reads</td><td>Requests from our server for the public post you imported, and picture requests from your device (section 7)</td></tr>
             </tbody>
           </table>
         </div>
         <p>We don't sell data, share it for advertising, or combine it with data from other companies.</p>
 
-        <h2 id="logs">8. Server logs</h2>
+        <h2 id="logs">9. Server logs</h2>
         <p>Like most online services, our server and our hosting provider keep technical logs of the requests they handle, such as the time, the address requested (which can include the link you imported) and network information like IP addresses. We use them only to keep Kawali running, fix problems and protect it from abuse. They are kept for a limited time and are never used to build a profile of you or to connect imports to a person.</p>
 
-        <h2 id="permissions">9. Permissions Kawali may ask for</h2>
+        <h2 id="permissions">10. Permissions Kawali may ask for</h2>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Permission</th><th>When</th><th>Why</th></tr></thead>
@@ -134,22 +151,24 @@
             </tbody>
           </table>
         </div>
-        <p>Import Photo uses Apple's system photo picker, which runs outside the app: Kawali only receives the photos you pick and never asks to read your photo library. Kawali never asks for your location, contacts or microphone.</p>
+        <p>Import Photo uses Apple's system photo picker, which runs outside the app: Kawali only receives the photos you pick and never asks to read your photo library. Kawali never asks for your location, contacts or microphone. Buying Kawali Feast uses Apple's own purchase screen, which asks for your confirmation the way any App Store purchase does.</p>
 
-        <h2 id="not-collected">10. Information we do not collect</h2>
-        <p>The app contains no advertising, no analytics, no crash-reporting service and no third-party tracking code, and it does not use advertising identifiers. We don't know which recipes you save, what's on your grocery list, or who imported a particular link.</p>
+        <h2 id="not-collected">11. Information we do not collect</h2>
+        <p>The app contains no advertising, no analytics, no crash-reporting service and no third-party tracking code, and it does not use advertising identifiers. The one record of how the app is used is the Feast page's, described in <a href="#feast">section 6</a>, and it is kept under an anonymous identifier. We don't know which recipes you save, what's on your grocery list, or who imported a particular link.</p>
         <p>Apple may share anonymised crash logs and usage statistics with developers, but only if you have chosen to share analytics with app developers in your device's Settings. That data is collected by Apple under Apple's privacy policy.</p>
 
-        <h2 id="children">11. Children's privacy</h2>
+        <h2 id="children">12. Children's privacy</h2>
         <p>Kawali is a cooking app for adults and is not directed at children under 13 (or the equivalent minimum age where you live). We do not knowingly collect personal information from children.</p>
 
-        <h2 id="rights">12. Your rights</h2>
-        <p>Privacy laws such as the GDPR, the UK GDPR and the California Consumer Privacy Act give you rights to access, correct, delete or export personal data a company holds about you, and to object to how it is used. Kawali is built so that we hold almost nothing about you: your recipes and groceries are on your device, where you can change or delete them, and what reaches our server is not linked to you. If you have a question or a request, email us and we'll help; we don't sell personal information, and we never will.</p>
+        <h2 id="rights">13. Your rights</h2>
+        <p>Privacy laws such as the GDPR, the UK GDPR and the California Consumer Privacy Act give you rights to access, correct, delete or export personal data a company holds about you, and to object to how it is used. Kawali is built so that we hold almost nothing about you: your recipes and groceries are on your device, where you can change or delete them, and what reaches our server is not linked to you.</p>
+        <p>The one record about your device that lasts is the Kawali Feast record RevenueCat holds (<a href="#feast">section 6</a>). It carries no name, so we can't find it by yours: if you would like it deleted, email us and we'll work out with you which anonymous identifier belongs to your device, then ask RevenueCat to delete it. Your App Store purchase history itself is Apple's, under your Apple Account.</p>
+        <p>If you have any other question or request, email us and we'll help; we don't sell personal information, and we never will.</p>
 
-        <h2 id="security">13. Security</h2>
-        <p>Everything the app sends to Kawali's server travels over encrypted HTTPS connections, and only the app can use the import service. Your saved recipes are protected by your device's own security: your passcode, Face ID or Touch ID, and iOS encryption. Access to our server and database is limited to the people who run Kawali.</p>
+        <h2 id="security">14. Security</h2>
+        <p>Everything the app sends to Kawali's server travels over encrypted HTTPS connections, and only the app can use the import service. Payments for Kawali Feast are handled entirely by Apple, so no card or bank details ever pass through Kawali or RevenueCat. Your saved recipes are protected by your device's own security: your passcode, Face ID or Touch ID, and iOS encryption. Access to our server, our database and our RevenueCat dashboard is limited to the people who run Kawali.</p>
 
-        <h2 id="changes">14. Changes to this policy</h2>
+        <h2 id="changes">15. Changes to this policy</h2>
         <p>If Kawali changes in a way that affects your privacy, we will update this page and the effective date at the top before the change reaches the app.</p>
 
         <h2 id="contact">Questions</h2>
