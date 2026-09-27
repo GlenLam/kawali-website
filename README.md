@@ -11,7 +11,7 @@ Kawali is a recipe app built for Filipino food. Paste a cooking video from YouTu
 - **Silent videos.** When a video has no written recipe or usable narration, Kawali watches it for the steps and notifies the cook when they're added.
 - **Other ways in.** Import Photo (up to four pages, read on the device with Vision), Snap Photo, Paste Text and Make Your Own.
 - **Groceries.** Choose what to add, sorted by aisle, the same ingredient added up across recipes when units match, English names on demand, Clear Completed, Print Grocery List.
-- **Privacy.** No account, ads, analytics or tracking. Recipes and groceries live on the device; links and the text read from photos go to Kawali's server (and OpenAI) to be read. The full picture is in `privacy.html`.
+- **Privacy.** No ads, analytics or tracking. Recipes and groceries live on the device; links and the text read from photos go to Kawali's server (and OpenAI) to be read. The full picture is in `privacy.html`.
 
 Requires iOS 26.2 or later, on iPhone and iPad. Made by CaLa Studios LLC. Questions go to support@calastudios.app.
 
