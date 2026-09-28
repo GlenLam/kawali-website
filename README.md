@@ -4,7 +4,7 @@ Marketing and support site for Kawali, the iPhone app that turns Filipino cookin
 
 ## About Kawali
 
-Kawali is a recipe app built for Filipino food. Paste a cooking video from YouTube, TikTok, Instagram, Facebook or Pinterest, or share it to Kawali from those apps, and Kawali reads the recipe from the description, the linked recipe page and the narration (English, Tagalog or Taglish). The cook reviews and edits it, saves it, and adds the ingredients to a grocery checklist.
+Kawali is a recipe app built for Filipino food. Paste a cooking video from YouTube, TikTok, Instagram or Facebook, or share it to Kawali from those apps, and Kawali reads the recipe from the description, the linked recipe page and the narration (English, Tagalog or Taglish). The cook reviews and edits it, saves it, and adds the ingredients to a grocery checklist.
 
 - **Filipino terminology kept.** Ingredient names stay as the source says them (patis, toyo, gata, siling labuyo), with the English beside them only as an explanation. The knowledge base behind this has 160+ ingredients, 30+ cooking terms, 23 dish families and 9 regions.
 - **Nothing invented.** An amount, time or serving count the source doesn't state is left blank and flagged, never guessed. A serving count may be estimated from the main ingredient's weight, shown as "~5" until the cook confirms it.
