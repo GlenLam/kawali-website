@@ -44,7 +44,7 @@
       <header class="doc-hero">
         <h1>Kawali Privacy Policy</h1>
         <div class="doc-meta">
-          <span><strong>Effective date:</strong> September 27, 2026</span>
+          <span><strong>Effective date:</strong> September 28, 2026</span>
           <span><strong>Applies to:</strong> the Kawali app for iPhone and iPad, including its share extension and the Kawali Feast subscription, and the Kawali service it uses to read recipes</span>
         </div>
         <ul class="doc-toc" aria-label="Sections">
@@ -88,19 +88,19 @@
         <h2 id="links">2. Importing from a link</h2>
         <p>When you paste or share a link from YouTube, TikTok, Instagram or Facebook and tap Import Recipe, the app sends that link to Kawali's server. Nothing else about you or your device is sent with it.</p>
         <p>The server then reads what the platform makes publicly available about that one post: its title, creator, description or caption, picture and, where available, captions, along with any recipe page the post links to. If that text doesn't already hold a written-out recipe, the server sends it to OpenAI (see <a href="#providers">section 8</a>) to turn it into ingredients and steps. The server answers with the recipe, which you review before saving on your device.</p>
-        <p>So the next person who imports the same post doesn't wait, the server keeps the finished recipe for that post for up to 30 days. It is stored by the post, not by who asked, and it contains only what was read from the public post, never your edits.</p>
+        <p>So the next person who imports the same post doesn't wait, the server keeps the finished recipe for that post in its recipe library, for as long as Kawali offers it. It is stored by the post, not by who asked, and it contains only what was read from the public post, never your edits. We may correct a recipe in the library by hand when Kawali read something wrong, and we count how many times each post has been asked for, never by whom.</p>
         <p>When you share a link to Kawali, the share sheet also asks the server for the post's title, creator and picture, so it can show you what you're about to import. That lookup is not stored.</p>
 
         <h2 id="watching">3. When Kawali watches a video</h2>
         <p>Some videos give no written recipe and no narration Kawali can read. For those, a computer we operate downloads the public video and works out the steps from it: it transcribes the narration (on that computer or through OpenAI) and, when the narration doesn't give the steps, takes still frames from the video and sends them to OpenAI to describe what the cook does. The video, its audio and the frames are deleted once the transcript or the description is saved; a few still frames may be kept to test and improve Kawali's accuracy.</p>
-        <p>The server keeps a record of the job: the post's link, the public text read from it and the steps that came out of it. It is about the video, not about you, and is not linked to any person or device.</p>
+        <p>The server keeps a record of the job for as long as it keeps the recipe (<a href="#links">section 2</a>): the post's link, the public text read from it, the transcript or the description of the frames, and the steps that came out of it, so the recipe can be read again when Kawali improves. It is about the video, not about you, and is not linked to any person or device.</p>
 
         <h2 id="photos-text">4. Importing from a photo or pasted text</h2>
         <ul>
           <li><strong>Photos:</strong> when you use Import Photo, Snap Photo, or share photos to Kawali, the words in the photo are read on your device by Apple's text recognition. <strong>The photo is never uploaded.</strong> Only the text that was read is sent to Kawali's server, so it can be laid out as a recipe.</li>
           <li><strong>Pasted text:</strong> when you tap Paste Text, the app reads your clipboard (iOS asks for your permission) and sends the copied text to Kawali's server.</li>
         </ul>
-        <p>The server reads the text and, when it isn't already laid out under headings like "Ingredients" and "Procedure", sends it to OpenAI to turn it into a recipe. The text is used only to answer that one request, and the server doesn't store it afterwards. Please don't include anything in a photo or pasted text that you wouldn't want processed this way.</p>
+        <p>The server reads the text and, when it isn't already laid out under headings like "Ingredients" and "Procedure", sends it to OpenAI to turn it into a recipe. The text is used only to answer that one request, and the server doesn't store it afterwards (OpenAI keeps it for up to 30 days, see <a href="#providers">section 8</a>). Please don't include anything in a photo or pasted text that you wouldn't want processed this way.</p>
 
         <h2 id="notifications">5. Notifications</h2>
         <p>Notifications are optional. The first time you save a recipe Kawali is still watching, iOS asks whether Kawali may send you notifications. If you allow them, the app sends the server your device's push token, the recipe's title and an identifier the app created for that recipe, so it can tell you when the steps are ready. The server keeps these only until that video is finished (at most three days) and then deletes them. Notifications are delivered by Apple's Push Notification service. You can turn them off at any time in Settings › Notifications › Kawali.</p>
@@ -128,7 +128,7 @@
             <thead><tr><th>Provider</th><th>What they do for Kawali</th><th>What they receive</th></tr></thead>
             <tbody>
               <tr><td>DigitalOcean</td><td>Hosts Kawali's server and database</td><td>Links and text sent for import, the records in sections 2, 3 and 5, and the logs in section 9</td></tr>
-              <tr><td>OpenAI</td><td>Turns recipe text into ingredients and steps; transcribes narration; describes video frames</td><td>Public text from posts, text you import from a photo or clipboard, and audio and frames from public videos. OpenAI's API terms don't allow it to use this data to train its models</td></tr>
+              <tr><td>OpenAI</td><td>Turns recipe text into ingredients and steps; transcribes narration; describes video frames</td><td>Public text from posts, text you import from a photo or clipboard, and audio and frames from public videos. OpenAI keeps what it is sent for up to 30 days, to monitor for abuse and to let us retrieve an answer, and then deletes it; its API terms don't allow it to use this data to train its models</td></tr>
               <tr><td>RevenueCat</td><td>Keeps track of Kawali Feast subscriptions and shows the Feast page</td><td>The anonymous device identifiers, the App Store's record of your Kawali purchases, the device details and the Feast page use listed in section 6</td></tr>
               <tr><td>Apple</td><td>The App Store and payment for Kawali Feast; delivers notifications</td><td>Your purchase, under your Apple Account and Apple's privacy policy; your push token and the notification, if you allow notifications</td></tr>
               <tr><td>YouTube, TikTok, Instagram, Facebook and linked recipe sites</td><td>The sources Kawali reads</td><td>Requests from our server for the public post you imported, and picture requests from your device (section 7)</td></tr>
