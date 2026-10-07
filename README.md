@@ -32,7 +32,7 @@ GitHub Pages serves `support.html` at `/support` (and `/support.html`), so the e
 
 ## Kusina
 
-Kusina (Filipino for kitchen) is the site's one home for articles, at flat URLs (`/kusina/<slug>`) so a piece never moves if its kind changes. Each article says what kind it is in its breadcrumb and on its index card: **Guide** (the why of Filipino food), **How-to** (a technique at the stove) or **Worth saving** (a creator's recipe we'd cook again, credited by name, linked to the original video, and summarized rather than copied out). To add one, copy `kusina/what-makes-filipino-food-unique.html`, change its `<head>` (title, description, canonical, Open Graph, JSON-LD dates), add a card at the top of `kusina/index.html`, and add it to `sitemap.xml`. Reading time is words ÷ 230, rounded.
+Kusina (Filipino for kitchen) is the site's one home for articles, at flat URLs (`/kusina/<slug>`) so a piece never moves if its kind changes. Each article says what kind it is in its breadcrumb and on its index card: **Guide** (the why of Filipino food), **How-to** (a technique at the stove) or **Worth saving** (a creator's recipe we'd cook again, credited by name, linked to the original video, and summarized rather than copied out). To add one, copy `kusina/what-makes-filipino-food-unique.html`, change its `<head>` (title, description, canonical, Open Graph, JSON-LD dates; keep the description under 160 characters, which Bing flags), add a card at the top of `kusina/index.html`, and add it to `sitemap.xml`. Reading time is words ÷ 230, rounded.
 
 ## Layout
 
