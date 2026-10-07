@@ -20,6 +20,8 @@ Requires iOS 26.2 or later, on iPhone and iPad. Made by CaLa Studios LLC. Questi
 | Path | File | Purpose |
 | --- | --- | --- |
 | `/` | `index.html` | Landing page |
+| `/kusina/` | `kusina/index.html` | Kusina, the articles: guides, how-tos and recipe picks |
+| `/kusina/<slug>` | `kusina/<slug>.html` | One article each |
 | `/support` | `support.html` | FAQ and contact; the App Store listing's Support URL |
 | `/privacy` | `privacy.html` | Privacy policy; the App Store listing's Privacy Policy URL |
 | `/404` | `404.html` | Not-found page |
@@ -27,6 +29,10 @@ Requires iOS 26.2 or later, on iPhone and iPad. Made by CaLa Studios LLC. Questi
 GitHub Pages serves `support.html` at `/support` (and `/support.html`), so the extensionless URLs work as-is. Terms of Use link to Apple's [Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/); there is no terms page here.
 
 `privacy.html` adds an `embedded` class to `<html>` when it detects it is inside an iframe and hides its header and footer, so the policy alone can be embedded elsewhere.
+
+## Kusina
+
+Kusina (Filipino for kitchen) is the site's one home for articles, at flat URLs (`/kusina/<slug>`) so a piece never moves if its kind changes. Each article says what kind it is in its breadcrumb and on its index card: **Guide** (the why of Filipino food), **How-to** (a technique at the stove) or **Worth saving** (a creator's recipe we'd cook again, credited by name, linked to the original video, and summarized rather than copied out). To add one, copy `kusina/what-makes-filipino-food-unique.html`, change its `<head>` (title, description, canonical, Open Graph, JSON-LD dates), add a card at the top of `kusina/index.html`, and add it to `sitemap.xml`. Reading time is words ÷ 230, rounded.
 
 ## Layout
 
