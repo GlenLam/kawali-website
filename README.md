@@ -12,8 +12,11 @@ Kawali is a recipe app built for Filipino food. Paste a cooking video from YouTu
 - **Other ways in.** Import Photo (up to four pages, read on the device with Vision), Snap Photo, Paste Text and Make Your Own.
 - **Groceries.** Choose what to add, sorted by aisle, the same ingredient added up across recipes when units match, English names on demand, Clear Completed, Print Grocery List.
 - **Privacy.** No ads, analytics or tracking. Recipes and groceries live on the device; links and the text read from photos go to Kawali's server to be read. The full picture is in `privacy.html`.
+- **Kawali Feast.** 5 free recipe reveals a calendar month; the subscription gives "lots more" (never a number, never "unlimited"). Saving, editing, Make Your Own and the grocery list are free.
 
 Requires iOS 26.2 or later, on iPhone and iPad. Made by CaLa Studios LLC. Questions go to support@calastudios.app.
+
+Kawali 1.0 went live on the App Store on 2026-10-23: **https://apps.apple.com/us/app/kawali-video-recipe-saver/id6808814154** (app id 6808814154; the listing is "Kawali: Video Recipe Saver", free, with Kawali Feast Monthly at $4.99 and Kawali Feast Yearly at $29.99 as in-app purchases). Every "Get the app" button, both badges and the footers' "App Store" link point there, `index.html` carries the `apple-itunes-app` meta tag for Safari's Smart App Banner, and its JSON-LD has `downloadUrl`, `installUrl` and the free `offers`.
 
 ## Pages
 
@@ -38,7 +41,7 @@ Kusina (Filipino for kitchen) is the site's one home for articles, at flat URLs 
 
 - `assets/css/site.css` – the one stylesheet, shared by every page. Light only, to match the app. Brand colors are the designer's hex values from the app's asset catalog: Chile Rojo `#AE431E` (everything tappable), Terracota `#D06224` (brand mark, big numerals), Olive `#8A8635` (notices; `#6F6B28` for text), Sunset `#EAC891` (hairlines).
 - `assets/js/site.js` – mobile nav, scroll reveal, footer year. No dependencies.
-- `assets/img/` – app icon sizes, the pan mark (`pan.svg`) and wordmark (`wordmark.svg`, used as a CSS mask) from the app's `Brand` assets, the six App Store screenshots (`shot-*.webp`) and three raw device screens (`screen-*.webp`: home, recipe, groceries) used in the phone frames, the four ingredient sketches from the App Store artwork (`sketch-*.webp`, transparent, tinted through a CSS mask), Apple's App Store badge (for launch, see below) and `og-image.jpg` for link previews.
+- `assets/img/` – app icon sizes, the pan mark (`pan.svg`) and wordmark (`wordmark.svg`, used as a CSS mask) from the app's `Brand` assets, the six App Store screenshots (`shot-*.webp`) and three raw device screens (`screen-*.webp`: home, recipe, groceries) used in the phone frames, the four ingredient sketches from the App Store artwork (`sketch-*.webp`, transparent, tinted through a CSS mask), Apple's App Store badge (`app-store-badge.svg`, shown at 162×54 by `.badge-link`) and `og-image.jpg` for link previews.
 - `assets/fonts/` – Bitter Medium, Medium Italic, SemiBold and Bold, the app's typeface, subset to Latin and self-hosted as WOFF2 (SIL OFL, license alongside). Body copy uses the system font, as in the app.
 - The step, grocery and card icons are the app's own glyphs (`Assets.xcassets/Glyphs`), inlined with `currentColor`. The platform marks are the same Simple Icons (CC0) the app uses.
 - `sitemap.xml`, `robots.txt`, `site.webmanifest` – the usual metadata.
@@ -55,12 +58,6 @@ Feature copy follows the build that is live in the App Store, not what is in dev
 
 To regenerate images: screenshots come from the App Store set (1290×2796 PNG) resized to 720 wide and encoded with `cwebp -q 82`; the `screen-*.webp` phone screens are raw device screenshots (1320×2868) at 600 wide. `og-image.jpg` is a 1200×630 HTML composition rendered with headless Chrome.
 
-### When the App Store listing goes live
+### The App Store link
 
-1. Replace each `<span class="store-soon" data-store>…</span>` (two in `index.html`) with the official badge:
-   ```html
-   <a class="badge-link" href="https://apps.apple.com/app/idAPP_ID"><img src="/assets/img/app-store-badge.svg" alt="Download on the App Store" width="162" height="54"></a>
-   ```
-2. Point every "Get the app" button (`href="#download"` / `href="/#download"`) at the same App Store URL, and change the CTA's "coming soon" line.
-3. Add `<meta name="apple-itunes-app" content="app-id=APP_ID">` to `index.html` for Safari's Smart App Banner, and `downloadUrl`, `installUrl` and `offers` to its JSON-LD.
-4. Add an "App Store" link to each page's footer.
+The listing's URL appears in every page's nav button and footer, in both badges on `index.html`, and in its JSON-LD; change them together (a search for `apps.apple.com` finds them all). The `apple-itunes-app` meta tag takes only the app id. If the app's name on the App Store changes, Apple keeps the old slug working, so the URL can stay.

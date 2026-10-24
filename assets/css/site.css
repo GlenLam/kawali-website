@@ -153,15 +153,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .btn-sm { padding: 9px 18px; font-size: 0.92rem; }
 .btn svg { width: 18px; height: 18px; flex: none; }
 
-/* App Store. Until the listing is live the badge is a plain "coming soon" label: Apple's official badge may
-   only link to the app itself. See the README for the swap. */
-.store-soon {
-  display: inline-flex; align-items: center; gap: 12px; height: 54px; padding: 0 20px 0 16px;
-  border-radius: 12px; background: var(--ink); color: #fff; line-height: 1.1;
-}
-.store-soon svg { width: 22px; height: 22px; color: var(--sunset); flex: none; }
-.store-soon small { display: block; font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgba(255, 255, 255, 0.72); }
-.store-soon strong { display: block; font-family: var(--serif); font-weight: 600; font-size: 1.12rem; }
+/* App Store badge (Apple's official artwork; it may only link to the listing itself). */
 .badge-link { display: inline-block; line-height: 0; border-radius: 8px; transition: transform 0.15s ease, opacity 0.15s ease; }
 .badge-link img { height: 54px; width: auto; }
 .badge-link:hover { transform: translateY(-1px); opacity: 0.94; }
@@ -554,5 +546,4 @@ h2.title { font-size: clamp(2rem, 4.2vw, 3rem); letter-spacing: -0.02em; }
 }
 @media (max-width: 380px) {
   .stats { grid-template-columns: 1fr; }
-  .store-soon strong { font-size: 1rem; }
 }
