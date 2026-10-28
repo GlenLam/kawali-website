@@ -45,7 +45,7 @@
       <header class="doc-hero">
         <h1>Kawali Privacy Policy</h1>
         <div class="doc-meta">
-          <span><strong>Effective date:</strong> September 28, 2026</span>
+          <span><strong>Effective date:</strong> October 28, 2026</span>
           <span><strong>Applies to:</strong> the Kawali app for iPhone and iPad, including its share extension and the Kawali Feast subscription, and the Kawali service it uses to read recipes</span>
         </div>
         <ul class="doc-toc" aria-label="Sections">
@@ -71,7 +71,7 @@
         <h2 id="short-version">The short version</h2>
         <div class="summary">
           <p>Kawali has no ads, no analytics and no tracking. Your saved recipes, your notes and your grocery list stay on your iPhone.</p>
-          <p>To turn a video into a recipe, the app sends the video's link to Kawali's server, which reads the public post and may use an AI service to help understand it. When you import a photo, the words are read on your iPhone and only the text is sent; the photo itself never leaves your device. Nothing that identifies you or your device is sent with an import, and we don't sell or share data for advertising.</p>
+          <p>To turn a video into a recipe, the app sends the video's link to Kawali's server, which reads the public post and may use an AI service to help understand it. When you import a photo, the picture is sent to Kawali's server so the AI service we use can read the words in it; the server keeps neither the photo nor the words once it has answered, and if it can't read the photo your iPhone reads the words itself and sends only the text. Nothing that identifies you or your device is sent with an import, and we don't sell or share data for advertising.</p>
           <p>Kawali Feast, the optional subscription, is bought through the App Store. Apple handles the payment, and RevenueCat, the service we use to keep track of subscriptions, holds the record of it under an anonymous identifier for your device, never under your name.</p>
         </div>
 
@@ -98,7 +98,7 @@
 
         <h2 id="photos-text">4. Importing from a photo or pasted text</h2>
         <ul>
-          <li><strong>Photos:</strong> when you use Import Photo, Snap Photo, or share photos to Kawali, the words in the photo are read on your device by Apple's text recognition. <strong>The photo is never uploaded.</strong> Only the text that was read is sent to Kawali's server, so it can be laid out as a recipe.</li>
+          <li><strong>Photos:</strong> when you use Import Photo, Snap Photo, or share photos to Kawali, the app shrinks each picture and sends it to Kawali's server, which has the AI service we use read the words in it, handwriting included, and then lays the words out as a recipe. The server keeps neither the picture nor the words once it has answered; the AI service keeps what it is sent for up to 30 days, as <a href="#providers">section 8</a> says. If the server can't read the photo, your iPhone reads the words itself, with Apple's text recognition or, on iOS 27 with Apple Intelligence, Apple's on-device model, and sends only the text. Nothing in the picture is used for anything but that one answer, so please don't photograph anything you wouldn't want read this way.</li>
           <li><strong>Pasted text:</strong> when you tap Paste Text, the app reads your clipboard (iOS asks for your permission) and sends the copied text to Kawali's server.</li>
         </ul>
         <p>The server reads the text and, when it isn't already laid out under headings like "Ingredients" and "Procedure", sends it to the AI service we use to turn it into a recipe. The text is used only to answer that one request, and the server doesn't store it afterwards (the AI service keeps it for up to 30 days, see <a href="#providers">section 8</a>). Please don't include anything in a photo or pasted text that you wouldn't want processed this way.</p>
@@ -128,8 +128,8 @@
           <table>
             <thead><tr><th>Provider</th><th>What they do for Kawali</th><th>What they receive</th></tr></thead>
             <tbody>
-              <tr><td>Our hosting provider</td><td>Hosts Kawali's server and database</td><td>Links and text sent for import, the records in sections 2, 3 and 5, and the logs in section 9</td></tr>
-              <tr><td>An AI service</td><td>Helps turn public posts, public videos and the text you import into ingredients and steps</td><td>Public text from posts, text you import from a photo or clipboard, and content from public videos. It keeps what it is sent for up to 30 days, to monitor for abuse and to let us retrieve an answer, and then deletes it; its terms don't allow it to use this data to train its models</td></tr>
+              <tr><td>Our hosting provider</td><td>Hosts Kawali's server and database</td><td>Links, photos and text sent for import, the records in sections 2, 3 and 5, and the logs in section 9</td></tr>
+              <tr><td>An AI service</td><td>Helps turn public posts, public videos and the text you import into ingredients and steps</td><td>Public text from posts, the photos and text you import, and content from public videos. It keeps what it is sent for up to 30 days, to monitor for abuse and to let us retrieve an answer, and then deletes it; its terms don't allow it to use this data to train its models</td></tr>
               <tr><td>RevenueCat</td><td>Keeps track of Kawali Feast subscriptions and shows the Feast page</td><td>The anonymous device identifiers, the App Store's record of your Kawali purchases, the device details and the Feast page use listed in section 6</td></tr>
               <tr><td>Apple</td><td>The App Store and payment for Kawali Feast; delivers notifications</td><td>Your purchase, under your Apple Account and Apple's privacy policy; your push token and the notification, if you allow notifications</td></tr>
               <tr><td>YouTube, TikTok, Instagram, Facebook and linked recipe sites</td><td>The sources Kawali reads</td><td>Requests from our server for the public post you imported, and picture requests from your device (section 7)</td></tr>
